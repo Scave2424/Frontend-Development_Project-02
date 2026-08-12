@@ -21,18 +21,18 @@ function register(event) {
     );
     if (BMI <= 18.5) {
         document.getElementById("BMI").classList.add("text-yellow-500");
-        document.getElementById("BMI").textContent = "Underweight BMI : " + BMI.toFixed(2);
+        document.getElementById("BMI").textContent = "You are Underweight.\nBMI is " + BMI.toFixed(2);
     }
     else if (BMI <= 25) {
         document.getElementById("BMI").classList.add("text-green-500");
-        document.getElementById("BMI").textContent = "Normal BMI : " + BMI.toFixed(2);
+        document.getElementById("BMI").textContent = "Your BMI is Normal.\nBMI is " + BMI.toFixed(2);
     }
     else if (BMI <= 30) {
         document.getElementById("BMI").classList.add("text-red-300");
-        document.getElementById("BMI").textContent = "Overweight BMI : " + BMI.toFixed(2);
+        document.getElementById("BMI").textContent = "You are Overweight.\nBMI is " + BMI.toFixed(2);
     }
     else {
         document.getElementById("BMI").classList.add("text-red-500");
-        document.getElementById("BMI").textContent = "Obese BMI : " + BMI.toFixed(2);
+        document.getElementById("BMI").textContent = "You are Obese.\nBMI is " + BMI.toFixed(2);
     }
 }

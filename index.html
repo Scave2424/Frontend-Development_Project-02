@@ -11,22 +11,23 @@
 
 </head>
 
-<body class="bg-blue-400 flex justify-center items-center h-screen"
-    style="background-image: url('https://res.cloudinary.com/du5eqjhw/image/upload/v1786456637/bmi.png');background-size: cover; background-position: center;">
-    <form class="text-center w-100 h-80 rounded-xl bg-green-100">
-        <h1 class="font-bold text-lg mb-2 ">What is my BMI?<br /> Calculate your Body Mass Index Below</h1>
-        <div >
+<body class="bg-blue-400 flex justify-center items-center h-screen min-h-screen p-4"
+    style="background-image: url('https://res.cloudinary.com/du5eqjhw/image/upload/v1786456637/bmi.png');background-size: cover; background-position: left center;background-repeat: no-repeat;">
+    <form class="text-center w-full max-w-lg mx-4 rounded-xl bg-green-100 p-4 ">
+        <h1 class="font-bold text-lg sm:text-xl md:text-2xl mb-2 ">What is my BMI?<br /> Calculate your Body Mass Index
+            Below</h1>
+        <div>
             <hr class="border-black-300 w-11/12 mx-auto border-1" />
-            <p class=" font-medium mt-4 ">Please enter your weight</p>
-            <input class="text-lg p-2 border rounded pt-1 pr-2 pb-1 pl-2" type="number" id="weight" min="1" step="0.1"
+            <p class=" md:text-xl mt-4 ">Please enter your weight</p>
+            <input class="text-lg p-2 border rounded w-full max-w-md" type="number" id="weight" min="1" step="0.1"
                 placeholder="Enter weight(in kg)" required>
-            <p class="font-medium">Please enter your height</p>
-            <input class="text-lg p-2 border rounded pt-1 pr-2 pb-1 pl-2" type="number" id="height" min="0.5"
-                step="0.01" placeholder="Enter height(in meter)" required><br />
-            <button type="submit" class="w-60 h-8 mt-6 mb-2 bg-gray-700  text-white rounded-md font-semibold"
+            <p class="md:text-xl">Please enter your height</p>
+            <input class="text-lg p-2 border rounded w-full max-w-md" type="number" id="height" min="0.5" step="0.01"
+                placeholder="Enter height(in meter)" required><br />
+            <button type="submit" class="w-full max-w-md h-8 mt-6 mb-2 bg-gray-700  text-white rounded-md font-semibold"
                 onclick="register(event)"> Calculate</button>
-            <p id="bmiX" ></p>
-            <p id="BMI" ></p>
+            <p id="bmiX"></p>
+            <p id="BMI" class="whitespace-pre-line"></p>
 
         </div>
 
