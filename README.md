@@ -9,7 +9,7 @@ This project takes a user's weight and height as input and calculates their BMI,
 ## Tech Used
 
 - **HTML5** — page structure and form
-- **Tailwind CSS (CDN)** — styling
+- **Tailwind CSS (CDN)** — styling, including responsive design (`sm:`, `md:` breakpoints)
 - **JavaScript (vanilla)** — logic and DOM manipulation
 
 ## Files
@@ -32,7 +32,9 @@ This project takes a user's weight and height as input and calculates their BMI,
      BMI = weight / (height * height)
      ```
 
-   - Displays the result with the correct category and color based on the BMI value.
+   - Displays the result with the correct category and color based on the BMI value (e.g. "You are Underweight. BMI is 17.50")
+
+The layout is responsive — the form, text sizes, and inputs adjust for mobile, tablet, and desktop screens using Tailwind's `sm:` and `md:` breakpoints, and `w-full` / `max-w-lg` for flexible width.
 
 ## BMI Formula Reference
 
@@ -62,8 +64,8 @@ No installation needed since it's plain HTML/JS.
 
 - Add labels to inputs for better accessibility
 - Add option to switch between kg/cm and lb/inches
-- Clean up the duplicate result paragraphs (`bmiX` and `BMI`) into one
 - Add a reset button
+- Test responsiveness on more real devices/screen sizes, not just browser resize
 
 ## Author
 
